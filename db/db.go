@@ -11,7 +11,7 @@ import (
 
 var DB *bolt.DB
 
-func init() {
+func Init() {
 	var err error
 	var db_file = config.Get("db_file")
 	fmt.Printf("db_file:%s\n", db_file)
